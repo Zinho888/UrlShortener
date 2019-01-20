@@ -1,0 +1,271 @@
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 14pt;
+  font-color: #555555;
+  background-color: #eeeeee;
+}
+
+h1 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 22pt;
+  font-weight: bold;
+  font-color: #555555;
+}
+
+a {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 18pt;
+  font-color: #2979bc;
+  text-decoration: underline;
+}
+
+input {
+  color: #555555;
+}
+
+#top_bar {
+  background-color: white;
+  height: 45vh;
+  width: 100%;
+}
+
+#top_bar #links {
+  width: 100%;
+  height: 20%;
+  background-color: white;
+}
+
+#top_bar #links span {
+  display: inline-block;
+  width: 33.3333333333%;
+  margin-right: -0.5%;
+  text-align: center;
+}
+
+#top_bar #links span a {
+  padding: 3%;
+  border-radius: 15px;
+  transition: 0.2s;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 18pt;
+}
+
+#top_bar #links span a:hover {
+  background-color: #2979bc;
+  color: white;
+  font-weight: bold;
+}
+
+#top_bar #links span a:focus {
+  font-weight: bold;
+  color: #2979bc;
+  outline: 0 !important;
+}
+
+#top_bar #Logo_Container {
+  height: 80%;
+  display: flex;
+  justify-content: center;
+}
+
+#top_bar #Logo_Container img {
+  align-self: center;
+  width: 80%;
+  height: 80%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#createContainer {
+  width: 100vw;
+  text-align: center;
+  height: 55vh;
+  padding: 1%;
+}
+
+#createContainer input[type=text] {
+  padding: 0.5%;
+  width: 30%;
+  margin-bottom: 0.5%;
+}
+
+#createContainer input[type=checkbox] {
+  cursor: pointer;
+  margin-bottom: 0.5%;
+}
+
+#createContainer input[type=button] {
+  background-color: #2979bc;
+  color: white;
+  padding: 0.5%;
+  border: none;
+  cursor: pointer;
+  font-size: 14pt;
+  width: 20%;
+}
+
+#createContainer h1 {
+  margin: 0%;
+  padding: 0%;
+}
+
+#createContainer #formWarns {
+  display: none;
+}
+
+#createContainer #privateBtn {
+  display: inline-block;
+  margin-bottom: 0.5%;
+}
+
+.warningMsg {
+  color: red;
+  display: inline-block;
+}
+
+#modal_background {
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+#modal {
+  width: 40%;
+  height: 40%;
+  background: white;
+  border-style: solid;
+  border-width: thin;
+  border-color: #555555;
+  position: absolute;
+  z-index: 2;
+  align-self: center;
+  border-radius: 15px;
+  padding: 0;
+}
+
+#modal-header {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-color: #2979bc;
+  z-index: 2;
+  color: red;
+  width: 100%;
+  height: 30%;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+#modal-header h1 {
+  align-self: center;
+}
+
+#modal-body {
+  padding: 1%;
+  width: 100%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#modal-body #modal-body-btn {
+  background-color: #2979bc;
+  color: white;
+  width: 30%;
+  cursor: pointer;
+  border-style: none;
+  border-radius: 15px;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+textarea:-webkit-autofill:active,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus,
+select:-webkit-autofill:active {
+  -webkit-text-fill-color: #555555;
+  box-shadow: none;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+#showUrl {
+  width: 100%;
+  padding-top: 1%;
+  height: 55vh;
+  text-align: center;
+}
+
+#showUrl .row {
+  height: 100%;
+}
+
+#showUrl #header {
+  height: 15%;
+  width: 70%;
+  display: inline-block;
+}
+
+#showUrl #header button {
+  background-color: #2979bc;
+  color: white;
+  font-size: 14pt;
+  width: 49%;
+  margin-bottom: 1%;
+  display: inline-block;
+}
+
+#showUrl #header .unusedButton {
+  background-color: #eeeeee;
+  border-style: solid;
+  border-width: thin;
+  border-color: #555555;
+  color: #555555;
+}
+
+#showUrl .accessed {
+  display: none !important;
+}
+
+#showUrl .listUrl {
+  display: inline-block;
+  width: 68.5%;
+  height: 70%;
+  overflow-y: auto;
+}
+
+#showUrl .listUrl .urlBox {
+  background-color: white;
+  text-align: left;
+  margin-bottom: 1%;
+  color: #555555;
+}
+
+#showUrl .listUrl .urlBox .longLink {
+  font-size: 14pt;
+}
+
+#help {
+  width: 100%;
+  height: 55vh;
+  padding-top: 1%;
+  text-align: center;
+}
+
+#help .left {
+  text-align: left;
+}
+

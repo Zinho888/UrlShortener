@@ -1,0 +1,119 @@
+#createContainer{//Div that contains the form for creating new short url
+  width: 100vw;
+  text-align: center;
+  height: 55vh;
+  padding: 1%;
+  input[type="text"]{
+    padding: 0.5%;
+    width: 30%;
+    margin-bottom: 0.5%;
+  }
+  input[type="checkbox"]{
+    cursor: pointer;
+    margin-bottom: 0.5%;
+  }
+  input[type="button"]{
+    background-color: $myBlue;
+    color: white;
+    padding: 0.5%;
+    border:none;
+    cursor: pointer;
+    font-size: 14pt;
+    width: 20%;
+  }
+  h1{
+    margin: 0%;
+    padding: 0%;
+  }
+  #formWarns{
+    display: none;
+  }
+  #privateBtn{
+    display: inline-block;
+    margin-bottom: 0.5%;
+  }
+}//End of #createContainer
+
+//Classes that will change form elements
+.warningMsg{
+  color: red;
+  display: inline-block;
+}
+
+//Modal styling
+#modal_background{
+  background-color: rgba(0,0,0,0.7);
+  z-index: 1;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+#modal{
+  width: 40%;
+  height: 40%;
+  background: white;
+  border-style: solid;
+  border-width: thin;
+  border-color: $myBlack;
+  position: absolute;
+  z-index: 2;
+  align-self: center;
+  border-radius: 15px;
+  padding: 0;
+}
+
+#modal-header{
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-color: $myBlue;
+  z-index: 2;
+  color: red;
+  width: 100%;
+  height: 30%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  h1{
+      align-self: center;
+  }
+}
+
+#modal-body{
+  padding: 1%;
+  width: 100%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  #modal-body-btn{
+    background-color: $myBlue;
+    color: white;
+    width: 30%;
+    cursor: pointer;
+    border-style: none;
+    border-radius: 15px;
+  }
+}
+
+//End of Modal Styling
+
+
+//removing yellow background-color from inputs when auto completing
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill
+{
+    &, &:hover, &:focus, &:active
+    {
+      -webkit-text-fill-color: $myBlack;
+      -webkit-box-shadow:none;
+      -moz-box-shadow:none;
+      box-shadow: none;
+      transition: background-color 5000s ease-in-out 0s;    }
+}

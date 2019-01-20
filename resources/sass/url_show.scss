@@ -1,0 +1,47 @@
+#showUrl{//Div that contains all the content from the show page
+  width: 100%;
+  padding-top: 1%;
+  height: 55vh;
+  text-align: center;
+  .row{
+    height: 100%;
+  }
+  #header{
+    height: 15%;
+    width: 70%;
+    display: inline-block;
+    button{
+      background-color: $myBlue;
+      color: white;
+      font-size: 14pt;
+      width: 49%;
+      margin-bottom: 1%;
+      display: inline-block;
+    }
+    .unusedButton{
+      background-color: $myGray;
+      border-style: solid;
+      border-width: thin;
+      border-color: $myBlack;
+      color: $myBlack;
+    }
+  }
+  .accessed{
+    display: none !important;
+  }
+  .listUrl{
+    display: inline-block;
+    width: 68.5%;
+    height: 70%;
+    overflow-y: auto;
+    .urlBox{
+      background-color: white;
+      text-align: left;
+      margin-bottom: 1%;
+      color: $myBlack;
+      .longLink{
+        font-size: 14pt;
+      }
+    }
+  }
+}//End of #showUrl

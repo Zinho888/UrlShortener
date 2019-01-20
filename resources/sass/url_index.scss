@@ -1,0 +1,40 @@
+//Sass Variables according to project standards
+$font: 'Source Sans Pro', sans-serif;
+$myGray: #eeeeee;
+$myBlue: #2979bc;
+$myBlack: #555555;
+//End of Sass Variables
+
+//Styling Default Tags
+body{
+  font-family: $font;
+  font-size: 14pt;
+  font-color: $myBlack;
+  background-color: $myGray;
+}//End of Body
+
+h1{
+  font-family: $font;
+  font-size: 22pt;
+  font-weight: bold;
+  font-color: $myBlack;
+}//End of h1
+
+a{
+  font-family: $font;
+  font-size: 18pt;
+  font-color: $myBlue;
+  text-decoration: underline;
+}//End of a
+
+input{
+  color: $myBlack
+}
+
+//End of styling default tags
+
+//Importing all other scss files into this index
+@import "url_topbar";
+@import "url_create";
+@import "url_show";
+@import "url_help";
