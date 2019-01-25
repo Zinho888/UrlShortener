@@ -58,11 +58,10 @@ a {
   justify-content: center;
 }
 
-#Logo_Container img {
+#Logo_Container h1 {
   align-self: center;
   width: 80%;
   height: 80%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-

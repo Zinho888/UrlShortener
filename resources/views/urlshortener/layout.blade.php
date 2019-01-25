@@ -14,7 +14,7 @@
     <div id="top_bar">
       {{-- This div contains the website logo --}}
       <div id="Logo_Container" >
-        <img src="{{ asset('/images/hn_bit_logo.png') }}" />
+        <h1> URL SHORTENER </h1>
       </div>
       {{-- This div the website links  --}}
       <div id="links">
